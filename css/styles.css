@@ -26,7 +26,7 @@ header {
     background-color: black;
     color: white;
     padding: 15px 0;
-    height: 574px;
+    height: auto;
     position: sticky;
     top: 0;
     z-index: 1000;
