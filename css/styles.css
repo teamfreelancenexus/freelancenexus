@@ -77,23 +77,32 @@ nav ul li a.active {
 
 
 
-.hero {
-    background: url('images/hero-background.jpg') no-repeat center center/cover;
+hero {
     color: white;
     padding: 30px 20px;
     text-align: center;
 }
 
 .hero h1 {
-    font-size: 48px;
-    margin-bottom: 0px;
-    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 .hero p {
     font-size: 22px;
     margin-bottom: 30px;
+    text-align: center;
 }
+
+.hero a {
+    text-decoration: dashed;
+}
+
+section {
+    text-align: center;
+}
+
 
 .cta {
     display: inline-block;
