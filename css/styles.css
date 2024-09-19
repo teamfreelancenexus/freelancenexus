@@ -1,4 +1,4 @@
-
+/* Global Styles */
 html, body {
     height: 100%;
     margin: 0;
@@ -13,19 +13,15 @@ body {
     flex-direction: column;
 }
 
-
 .main-content {
     flex: 1;
 }
 
-
-
-
+/* Header Styles */
 header {
-    /* background-color: #007bff; */
     background-color: black;
     color: white;
-    padding: 15px 0;
+    padding: 20px 0;
     height: auto;
     position: sticky;
     top: 0;
@@ -54,31 +50,26 @@ nav ul li a {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-nav ul li a:hover,
-nav ul li a.active {
+nav ul li a:hover, nav ul li a.active {
     background-color: green;
     color: #e9ecef;
 }
 
-
-/* Style for the logo in the header */
+/* Logo Styles */
 .logo-container {
     display: flex;
-    justify-content: center; /* Aligns logo to the center */
+    justify-content: center;
     align-items: center;
     margin: 10px 0;
 }
 
 .logo {
-    max-width: 160px;  /* Adjust the max width */
-    height: auto;      /* Maintain aspect ratio */
+    max-width: 160px;
+    height: auto;
 }
 
-
-
-
 .hero {
-    color: black;
+    color: white;
     padding: 30px 20px;
     text-align: center;
 }
@@ -119,6 +110,7 @@ section {
     background-color: #218838;
 }
 
+/* Section Styles */
 section {
     padding: 60px 20px;
     margin: 20px 0;
@@ -140,7 +132,7 @@ section p {
     font-size: 18px;
     margin-bottom: 20px;
     max-width: 800px;
-    margin: 0 auto 30px auto;
+    margin: 0 auto 30px;
     color: #555;
 }
 
@@ -149,7 +141,6 @@ section p {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    
 }
 
 .project-card {
@@ -226,6 +217,7 @@ footer {
     text-align: center;
     padding: 20px 0;
     margin-top: auto;
+
 }
 
 footer p {
@@ -244,22 +236,7 @@ footer .social-links a:hover {
     color: #28a745;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    .project-card {
-        width: 100%;
-    }
-}
-
-
+/* Teams Section */
 .teams-container {
     width: 80%;
     max-width: 1200px;
@@ -274,13 +251,12 @@ h2 {
 
 .table {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 8 columns per row */
+    grid-template-columns: repeat(4, 1fr);
     gap: 15px;
     background-color: #d2efeb;
     padding: 20px;
     border-radius: 8px;
 }
-
 
 .team-cell {
     background-color: white;
@@ -304,12 +280,44 @@ h2 {
     transition: background-color 0.3s;
 }
 
-/* .join-btn:hover {
-    background-color: ;
-} */
+.join-btn:hover {
+    background-color: green;
+}
 
+/* Responsive Design */
 @media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
     .table {
-        grid-template-columns: repeat(2, 1fr); /* On small screens, 2 columns per row */
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 36px;
+        
+    }
+    .hero p {
+        font-size: 18px;
+    }
+
+    .cta {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .table {
+        grid-template-columns: 1fr;
     }
 }
