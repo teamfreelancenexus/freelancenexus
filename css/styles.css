@@ -77,8 +77,8 @@ nav ul li a.active {
 
 
 
-hero {
-    color: white;
+.hero {
+    color: black;
     padding: 30px 20px;
     text-align: center;
 }
